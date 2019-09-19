@@ -23,6 +23,7 @@ var AppController = (function() {
     // 3. add item to UI
     // 4. calc the budget
     // 5. display the budget on the UI
+    console.log(event);
   };
 
   document.querySelector('.add__btn').addEventListener('click', ctrlAddItem);
@@ -34,6 +35,7 @@ var AppController = (function() {
   // Note use of the 'event' object
   document.addEventListener('keypress', function(event) {
     if (event.keyCode === 13 || event.which === 13) {
+
       ctrlAddItem();
     }
   });
